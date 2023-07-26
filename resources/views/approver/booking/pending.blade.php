@@ -22,9 +22,11 @@
                             </tr>
                         </thead>
                         <tbody class="table-border-bottom-0">
+                            @php $i=1 @endphp
+
                             @forelse ($approval_1 as $data)
                                 <tr>
-                                    <td>{{ $data->id }}</td>
+                                    <td>{{ $i++ }}</td>
                                     <td>{{ $data->vehicle->number_plate }}</td>
                                     <td>{{ $data->driver->name }}</td>
                                     <td>{{ $data->booking_date }}</td>
@@ -75,9 +77,11 @@
                             </tr>
                         </thead>
                         <tbody class="table-border-bottom-0">
+                            @php $x=1 @endphp
+
                             @forelse ($approval_2 as $data)
                                 <tr>
-                                    <td>{{ $data->id }}</td>
+                                    <td>{{ $x++ }}</td>
                                     <td>{{ $data->vehicle->number_plate }}</td>
                                     <td>{{ $data->driver->name }}</td>
                                     <td>{{ $data->booking_date }}</td>

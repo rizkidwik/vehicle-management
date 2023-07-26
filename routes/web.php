@@ -39,6 +39,8 @@ Route::resource('/',\App\Http\Controllers\Approver\DashboardController::class);
 Route::get('/pending',[\App\Http\Controllers\Approver\BookingController::class,'pending']);
 Route::get('/approve',[\App\Http\Controllers\Approver\BookingController::class,'approve']);
 Route::get('/reject',[\App\Http\Controllers\Approver\BookingController::class,'reject']);
+Route::get('/report',[\App\Http\Controllers\Approver\ReportController::class,'index']);
+Route::post('/report/export',[\App\Http\Controllers\Approver\ReportController::class,'exportExcel']);
 
 Route::get('/approval1/{id}',[\App\Http\Controllers\Approver\BookingController::class,'approval1'])->name('booking.approve1');
 Route::get('/approval2/{id}',[\App\Http\Controllers\Approver\BookingController::class,'approval2'])->name('booking.approve2');

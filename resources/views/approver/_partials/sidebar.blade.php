@@ -82,5 +82,11 @@
                 <div data-i18n="Basic">Tidak Disetujui</div>
             </a>
         </li>
+        <li class="menu-item {{ request()->is('report*') ? 'active' : '' }}">
+            <a href="{{ url('report') }}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-collection"></i>
+                <div data-i18n="Basic">Report</div>
+            </a>
+        </li>
     </ul>
 </aside>
