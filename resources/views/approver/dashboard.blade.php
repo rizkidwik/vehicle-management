@@ -5,7 +5,7 @@
 
     <div class="card">
         <div class="card-header">
-            <h4>Grafik Kendaraan</h4>
+            <h4>Grafik Peminjaman Kendaraan</h4>
         </div>
         <div class="card-body">
             <div id="chartPemakaian"></div>
